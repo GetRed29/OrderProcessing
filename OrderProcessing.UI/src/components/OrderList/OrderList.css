@@ -1,0 +1,185 @@
+.btn-create-order {
+    width: 100%;
+    background-color: rgba(35, 134, 54, 0.1);
+    color: #3fb950;
+    border: 1px dashed #2ea043;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 24px;
+}
+
+    .btn-create-order:hover {
+        background-color: rgba(46, 160, 67, 0.2);
+        border-style: solid;
+        box-shadow: 0 0 12px rgba(63, 185, 80, 0.25);
+        transform: translateY(-1px);
+    }
+
+.orders-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+    margin-bottom: 16px;
+}
+
+.orders-title-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #8b949e;
+    letter-spacing: 0.08em;
+}
+
+.orders-counter-dot {
+    font-size: 0.85rem;
+    color: #8b949e;
+}
+
+.orders-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+    .orders-list-wrapper::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .orders-list-wrapper::-webkit-scrollbar-track {
+        background: #0d0f12;
+    }
+
+    .orders-list-wrapper::-webkit-scrollbar-thumb {
+        background: #20242c;
+        border-radius: 3px;
+    }
+
+.order-list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+}
+
+    .order-list-row:hover {
+        background-color: rgba(255, 255, 255, 0.02);
+    }
+
+.selection-arrow-pointer {
+    font-size: 0.7rem;
+    margin-right: 8px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s ease;
+}
+
+.order-hash-id {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #58a6ff;
+    transition: color 0.15s ease;
+}
+
+.order-list-row.row-is-selected .selection-arrow-pointer {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.order-list-row.row-is-selected .order-hash-id {
+    color: #f0f6fc;
+}
+
+.order-list-row.row-state-processing .selection-arrow-pointer {
+    color: #ffa726;
+}
+
+.order-list-row.row-state-processing.row-is-selected {
+    background-color: rgba(255, 152, 0, 0.05);
+    border-color: rgba(255, 152, 0, 0.25);
+    box-shadow: 0 0 12px rgba(255, 152, 0, 0.12);
+}
+
+.order-list-row.row-state-shipped .selection-arrow-pointer {
+    color: #38bdf8;
+}
+
+.order-list-row.row-state-shipped.row-is-selected {
+    background-color: rgba(56, 189, 248, 0.05);
+    border-color: rgba(56, 189, 248, 0.25);
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.12);
+}
+
+.order-list-row.row-state-pending .selection-arrow-pointer {
+    color: #c9d1d9;
+}
+
+.order-list-row.row-state-pending.row-is-selected {
+    background-color: rgba(139, 148, 158, 0.06);
+    border-color: rgba(139, 148, 158, 0.25);
+    box-shadow: 0 0 12px rgba(139, 148, 158, 0.1);
+}
+
+.order-list-row.row-state-cancelled .selection-arrow-pointer {
+    color: #f87171;
+}
+
+.order-list-row.row-state-cancelled.row-is-selected {
+    background-color: rgba(248, 113, 113, 0.05);
+    border-color: rgba(248, 113, 113, 0.25);
+    box-shadow: 0 0 12px rgba(248, 113, 113, 0.12);
+}
+
+.order-list-row.row-state-delivered .selection-arrow-pointer {
+    color: #3fb950;
+}
+
+.order-list-row.row-state-delivered.row-is-selected {
+    background-color: rgba(63, 185, 80, 0.05);
+    border-color: rgba(63, 185, 80, 0.25);
+    box-shadow: 0 0 12px rgba(63, 185, 80, 0.12);
+}
+
+.status-pill {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-pill-processing {
+    background-color: rgba(255, 152, 0, 0.12);
+    color: #ffa726;
+}
+
+.status-pill-shipped {
+    background-color: rgba(56, 189, 248, 0.12);
+    color: #38bdf8;
+}
+
+.status-pill-pending {
+    background-color: rgba(139, 148, 158, 0.12);
+    color: #c9d1d9;
+}
+
+.status-pill-cancelled {
+    background-color: rgba(248, 113, 113, 0.12);
+    color: #f87171;
+}
+
+.status-pill-delivered {
+    background-color: rgba(63, 185, 80, 0.12);
+    color: #3fb950;
+}

@@ -1,0 +1,60 @@
+.order-workspace-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background-color: var(--bg-header) !important;
+    border-bottom: 1px solid var(--border-color);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header-brand-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-icon {
+    font-size: 1.1rem;
+}
+
+.brand-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f0f4f8;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+}
+
+.brand-divider {
+    margin: 0 6px;
+    color: #8b949e;
+    font-weight: 400;
+}
+
+.brand-subtitle {
+    color: #8b949e;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.btn-swagger-link {
+    background-color: rgba(56, 189, 248, 0.05);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    .btn-swagger-link:hover {
+        background-color: rgba(56, 189, 248, 0.12);
+        border-color: #38bdf8;
+        box-shadow: 0 0 8px rgba(56, 189, 248, 0.2);
+    }
