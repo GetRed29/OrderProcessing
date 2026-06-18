@@ -151,6 +151,16 @@
     box-shadow: 0 0 12px rgba(63, 185, 80, 0.12);
 }
 
+.order-list-row.row-state-confirmed .selection-arrow-pointer {
+    color: #a855f7;
+}
+
+.order-list-row.row-state-confirmed.row-is-selected {
+    background-color: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.25);
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.12);
+}
+
 .status-pill {
     padding: 3px 10px;
     border-radius: 20px;
@@ -182,4 +192,9 @@
 .status-pill-delivered {
     background-color: rgba(63, 185, 80, 0.12);
     color: #3fb950;
+}
+
+.status-pill-confirmed {
+    background-color: rgba(168, 85, 247, 0.12);
+    color: #a855f7;
 }
